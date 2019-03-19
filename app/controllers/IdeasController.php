@@ -32,7 +32,7 @@ class IdeasController extends Controller
 
     public function create()
     {
-        $text = $this->getParam('name');
+        $text = $this->getParam('text');
         $idea = new Idea([
             'text' => $text,
             'likes' => 0,
