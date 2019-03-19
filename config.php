@@ -2,8 +2,8 @@
 
 return [
     'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'notes',
+    'host' => 'db',
+    'database' => 'ideasdb',
     'username' => 'user',
     'password' => '123456',
 ];

@@ -3,8 +3,8 @@
 use app\controllers\IdeasController;
 
 /** @var \app\Application $app */
-$app->get('/ideas', IdeasController::class . ':view');
-$app->post('/ideas', IdeasController::class . ':create');
+$app->get('/api/ideas', IdeasController::class . ':view');
+$app->post('/api/ideas', IdeasController::class . ':create');
 
-$app->post('/like', IdeasController::class . ':like');
-$app->post('/dislike', IdeasController::class . ':dislike');
+$app->post('/api/like', IdeasController::class . ':like');
+$app->post('/api/dislike', IdeasController::class . ':dislike');
