@@ -1,7 +1,10 @@
 <?php
 
-use app\controllers\HelloController;
+use app\controllers\IdeasController;
 
 /** @var \app\Application $app */
-$app->get('/hello', HelloController::class . ':index');
-$app->post('/hello', HelloController::class . ':post');
+$app->get('/ideas', IdeasController::class . ':view');
+$app->post('/ideas', IdeasController::class . ':create');
+
+$app->post('/like', IdeasController::class . ':like');
+$app->post('/dislike', IdeasController::class . ':dislike');
