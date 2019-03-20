@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS `dbideas` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS `ideasdb` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
-USE `dbideas`;
+USE `ideasdb`;
 
 CREATE TABLE IF NOT EXISTS `ideas` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
