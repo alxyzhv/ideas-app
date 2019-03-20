@@ -11,6 +11,7 @@ services:
       - ./.docker/nginx:/etc/nginx/conf.d
     depends_on:
       - php
+      - frontend
 
   php:
     container_name: php
@@ -31,3 +32,9 @@ services:
     volumes:
       - ./.docker/db/data:/var/lib/mysql
       - ./.docker/db/dump:/docker-entrypoint-initdb.d
+
+  frontend:
+    container_name: frontend
+    build: .docker/node
+    volumes:
+      - .:/app
